@@ -1,5 +1,5 @@
 ---
-title: 🐧 Linux 常用命令与运维技巧
+title: Linux 常用命令与运维技巧
 tags: [Linux, Bash, 运维, 命令行]
 ---
 

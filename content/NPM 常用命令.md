@@ -1,5 +1,5 @@
 ---
-title: 📦 NPM 常用命令与缓存清理
+title: NPM 常用命令与缓存清理
 tags: [NPM, Node, 包管理, 前端]
 ---
 

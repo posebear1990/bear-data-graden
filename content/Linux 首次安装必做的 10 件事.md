@@ -1,5 +1,5 @@
 ---
-title: ⚙️ Linux 首次安装必做的 10 件事
+title: Linux 首次安装必做的 10 件事
 tags: [Linux, 环境配置, Ubuntu, 系统]
 ---
 

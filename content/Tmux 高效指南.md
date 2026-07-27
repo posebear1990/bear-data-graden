@@ -1,5 +1,5 @@
 ---
-title: 🖥️ Tmux 终端复用高效指南
+title: Tmux 终端复用高效指南
 tags: [Tmux, Terminal, Linux, 效率]
 ---
 
@@ -20,7 +20,7 @@ tmux a -t session-name
 # 暂时断开当前会话（保持后台运行）
 # 快捷键：Ctrl+b d
 
-# 彻底彻底杀死/关闭会话
+# 彻底杀死/关闭会话
 tmux kill-session -t session-name
 ```
 

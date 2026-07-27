@@ -1,5 +1,5 @@
 ---
-title: 🎨 CSS 实用技巧与现代布局
+title: CSS 实用技巧与现代布局
 tags: [CSS, Flexbox, 前端, 布局]
 ---
 
@@ -18,5 +18,4 @@ tags: [CSS, Flexbox, 前端, 布局]
 ---
 
 ## 关联网节点
-- 在 [[知识图谱可视化 (Graph Visualization)]] 与数字花园的自定义排版中应用 CSS。
 - 与 [[前端开发工具与 Utils]] 搭配构建响应式 Web 应用。

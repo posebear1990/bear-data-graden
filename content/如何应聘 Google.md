@@ -1,5 +1,5 @@
 ---
-title: 💼 如何应聘 Google 指南 (Steve Yegge 备忘)
+title: 如何应聘 Google 指南 (Steve Yegge 备忘)
 tags: [面试, Google, 算法, 职业发展, 软技能]
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 🛠️ Git 常用命令指南
+title: Git 常用命令指南
 tags: [Git, 工具, 版本控制, 前端]
 ---
 

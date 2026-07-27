@@ -1,5 +1,5 @@
 ---
-title: 🪟 Windows 实用命令与 WSL 配置
+title: Windows 实用命令与 WSL 配置
 tags: [Windows, WSL, 命令行, 环境]
 ---
 
