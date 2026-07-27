@@ -64,6 +64,16 @@ html.os-other .graph > h3::after {
   content: "Ctrl+G" !important;
 }
 
+// Header & Top Padding Optimization (Fix 6rem gap)
+.page-header {
+  margin-top: 1.5rem !important;
+}
+
+body > .page {
+  padding-top: 1.5rem !important;
+}
+
+
 
 
 

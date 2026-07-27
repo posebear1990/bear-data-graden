@@ -145,15 +145,6 @@ function setupShortcutOS() {
   if (!isMac) {
     document.documentElement.classList.add("os-other");
   }
-
-  const searchInput = document.querySelector(".search-bar") as HTMLInputElement;
-  if (searchInput) {
-    const k = isMac ? "⌘K" : "Ctrl+K";
-    const orig = searchInput.getAttribute("placeholder") || "Search";
-    if (!orig.includes("(")) {
-      searchInput.setAttribute("placeholder", `${orig} (${k})`);
-    }
-  }
 }
 
 document.addEventListener("nav", setupShortcutOS)
