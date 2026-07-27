@@ -144,6 +144,10 @@ function setupShortcutOS() {
   const isMac = typeof navigator !== "undefined" && /Mac|iPod|iPhone|iPad/.test(navigator.userAgent || navigator.platform);
   if (!isMac) {
     document.documentElement.classList.add("os-other");
+    const shortcutBtn = document.querySelector(".search-shortcut");
+    if (shortcutBtn) {
+      shortcutBtn.textContent = "Ctrl+K";
+    }
   }
 }
 
