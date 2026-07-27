@@ -139,3 +139,27 @@ function setupPopovers() {
 
 document.addEventListener("nav", setupPopovers)
 document.addEventListener("render", setupPopovers)
+
+function setupShortcutOS() {
+  const isMac = typeof navigator !== "undefined" && /Mac|iPod|iPhone|iPad/.test(navigator.userAgent || navigator.platform);
+  if (!isMac) {
+    document.documentElement.classList.add("os-other");
+  }
+
+  const searchInput = document.querySelector(".search-bar") as HTMLInputElement;
+  if (searchInput) {
+    const k = isMac ? "⌘K" : "Ctrl+K";
+    const orig = searchInput.getAttribute("placeholder") || "Search";
+    if (!orig.includes("(")) {
+      searchInput.setAttribute("placeholder", `${orig} (${k})`);
+    }
+  }
+}
+
+document.addEventListener("nav", setupShortcutOS)
+document.addEventListener("render", setupShortcutOS)
+document.readyState === "loading"
+  ? document.addEventListener("DOMContentLoaded", setupShortcutOS)
+  : setupShortcutOS()
+
+

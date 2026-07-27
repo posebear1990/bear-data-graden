@@ -22,7 +22,7 @@ title: 知识网络中心 (LLM-Wiki Knowledge Hub)
 
 ### 3. 生活与精神探索 (Life & Cultural Exploration)
 * **生活哲学**：[[如何过好生活]] - 减噪、健康与行动力
-* **ACGN 文化**：[[番剧与娱乐清单]] - 2006-2019 年个人完整观影日志与神作榜单
+* **ACGN 文化**：[[番剧观看记录]] - 2006-2026 年个人完整观影日志与神作榜单
 
 ### 4. 架构规约 (Garden Schema)
 * [[LLM-Wiki 数字花园维护规约 (AGENTS.md)]] - 规定 Agent 自动维保工作流
