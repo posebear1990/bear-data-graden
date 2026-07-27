@@ -1,3 +1,109 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// Graph-First Digital Garden Modern Canvas Layout
+:root {
+  --graph-bg: #0f141c;
+  --panel-bg: rgba(22, 28, 38, 0.82);
+  --panel-border: rgba(255, 255, 255, 0.12);
+  --accent-cyan: #38bdf8;
+  --accent-emerald: #34d399;
+}
+
+body {
+  background-color: var(--graph-bg);
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+// Layout adjustments to make Graph prominent
+.page {
+  max-width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+
+// Left Sidebar & Toolbar as Floating Glass Pill
+header, .left.sidebar {
+  position: fixed !important;
+  top: 1.5rem !important;
+  left: 1.5rem !important;
+  z-index: 100 !important;
+  background: var(--panel-bg) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--panel-border) !important;
+  border-radius: 16px !important;
+  padding: 0.75rem 1.25rem !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+  max-width: 320px !important;
+}
+
+// Main Content Article as Slide-Over Glass Card
+.center {
+  position: fixed !important;
+  right: 1.5rem !important;
+  top: 1.5rem !important;
+  bottom: 1.5rem !important;
+  width: min(650px, 90vw) !important;
+  z-index: 90 !important;
+  background: var(--panel-bg) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid var(--panel-border) !important;
+  border-radius: 20px !important;
+  padding: 2.5rem 2rem !important;
+  overflow-y: auto !important;
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.4) !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease !important;
+
+  // Custom Scrollbar
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+  }
+}
+
+// Fullscreen Network Graph Container
+.right.sidebar, .graph, .graph-outer {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 10 !important;
+  background: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+
+  svg, canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+// Enhance bi-directional link appearance inside articles
+a.internal {
+  background: rgba(56, 189, 248, 0.12) !important;
+  color: var(--accent-cyan) !important;
+  padding: 2px 6px !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+
+  &:hover {
+    background: rgba(56, 189, 248, 0.25) !important;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.4) !important;
+    transform: translateY(-1px);
+  }
+}
+
